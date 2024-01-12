@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let given=['hi','hello','bye','getlost']
+        //answer- ['tsolteg','eyb','olleh','ih']
+
+        let z=given.reverse()
+        console.log(z);
+
+        let ans=z.map((a)=>{
+            console.log(a);
+            let b=a.split('')
+            console.log(b);
+            let c=b.reverse()
+            console.log(c);
+            let d=c.join('')
+            console.log(d);
+            return d
+            //(or)
+            //let d=a.split('').reverse().join('')
+            //return d
+        })
+        console.log(ans);
+
+        //Reverse array without reverse method 
+        //let x=[80,90,100,5]
+
+        let x=[80,90,100,5]
+        let res=[]
+        let len=x.length()
+        console.log(len);
+
+        for(let i=0; i<len; i++)
+        {
+            let remelem=x.shift()
+            console.log(remelem);
+            res.unshift(remelem)
+        }
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Random Color</button>
+    <h1></h1>
+
+    <script>
+        function f1()
+        {
+            let r=Math.trunc(Math.random()*256)
+            let g=Math.trunc(Math.random()*256)
+            let b=Math.trunc(Math.random()*256)
+            let a=Math.random().toFixed(2)
+            document.querySelector('h1').innerHTML=`rgb(${r},${g},${b},${a})`
+            document.querySelector('body').style.backgroundColor=`rgb(${r},${g},${b},${a})`
+        }
+    </script>
+</body>
+</html>

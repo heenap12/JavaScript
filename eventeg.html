@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>width</h1>
+    <input type="range" min="10" max="200" oninput="f1()">
+    <h1 id="b">height</h1>
+    <input type="range" min="10" max="200" oninput="f2()" id="x">
+    <img src="./../cubbon park.jpg" alt="" width="200px" height="200px">
+   
+
+
+    <script>
+        function f1()
+        {
+           let z= document.querySelector('input').value
+           document.querySelector('img').style.width=z+'px'
+        }
+        function f2()
+        {
+            let y= document.getElementById('x').value
+           document.querySelector('img').style.height=y+'px'
+        }
+    </script>
+</body>
+</html>

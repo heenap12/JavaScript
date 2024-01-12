@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- last digit of a number -->
+    <script>
+        var i=Number(prompt("enter a number"))
+        console.log(i%10);
+    </script>
+
+<!-- count no of digits in a number -->
+    <!-- <script>
+        var j=Number(prompt("enter a number"))
+        var count=0;
+        while(j>0)
+        {
+            var rem=j%10;
+            count=count+1;
+            var j=j/10;
+        }
+        console.log(count);
+    </script> -->
+
+<!--using arrow function check no is even or odd  -->
+    <script>
+        var y=Number(prompt("enter number"))
+        var x=() =>
+        {
+            if(y%2==0)
+            console.log("even");
+            else
+            console.log("odd");
+        }
+        x()
+    </script>
+</body>
+</html>

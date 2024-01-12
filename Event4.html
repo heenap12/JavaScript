@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Lorem, ipsum.</h1>
+    <h1 id="a">Lorem ipsum dolor sit amet.</h1>
+    <p id="b">Lorem.</p>
+
+    <script>
+        let x=document.querySelector('h1')
+        console.log(x);
+        x.style.color="red"
+        x.style.backgroundColor="green"
+        let y=document.getElementById('a')
+        y.style.cssText="color:pink;background-color:yellow;"
+    </script>  -->
+
+    <!-- <input type="text" oninput="f1()">
+    <hr>
+    <input type="text" id="a">
+    <script>
+        function f1()
+        {
+           let x=document.querySelector('input').value
+           document.getElementById('a').value=x
+        }
+    </script> -->
+
+    <input type="password" oninput="f1()" id="x">
+    <h1></h1>
+
+    <script>
+        
+        function f1()
+        {   
+            let x=document.querySelector('input').value
+            let len=x.length
+            if(len==0)
+            {
+                document.querySelector('h1').innerHTML=""
+            }
+            if(len==1 && len<=4){
+            document.querySelector('h1').innerHTML="weak"
+            document.querySelector('h1').style.color="red"
+            }
+            else if(len>=5 && len<=8){
+            document.querySelector('h1').innerHTML="good"
+            document.querySelector('h1').style.color="blue"
+            }
+            else if(len>=9 && len<=16)
+            {
+                document.querySelector('h1').innerHTML="strong"
+                document.querySelector('h1').style.color="yellow"
+            }
+            else if(len>=17)
+            {
+                document.querySelector('h1').innerHTML="excellent"
+                document.querySelector('h1').style.color="pink"
+            }
+            
+            
+        }
+    </script>
+
+
+</body>
+</html>

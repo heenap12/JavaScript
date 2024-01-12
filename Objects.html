@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- We can create object using 3 ways: direct literals, new keyword and constructor function -->
+    <script>
+
+        //Direct Literals
+        //key:value pair where key is always a variable and value can be variable or value 
+        let car={
+            carName: "Mercedes",
+            carColor: "Black",
+            carMileage: 15
+        }
+        console.log(car);
+        console.log(typeof car);
+
+        //To access data we use dot operator or subscript operator 
+        console.log("Car name is "+ car.carName);  //dot operator
+        console.log(car.carColor,car.carName);
+        console.log(car["carName"]);    //subscript operator
+        console.log(car["carColor"]); 
+
+        //Modification
+        //Update Object property
+        // Syntax: objName.propertyName= newValue
+        car.carMileage=10
+        console.log(car);
+
+        //Add object property
+        //Syntax: objName.propertName= propertyValue
+        car.carRegNo="KA AB 1234"
+        console.log(car);
+
+        //Delete object property
+        //Syntax: delete objName.propertyName
+        delete car.carColor
+        console.log(car);
+
+        let personObj = {
+            fName : "Dinga",
+            lName : "Raja",
+            dob : 1947,
+            fullName : function(){
+                console.log(`My name is ${this.fName} ${this.lName}`);
+            },
+            calculateAge : function(){
+                let age = 2023 - this.dob
+                console.log(age);
+            }
+        }
+        personObj.fullName()
+        personObj.calculateAge()
+        //this keyword is used only with anonymous func bcz other func have func name and here the propertyName is acting as variable to call. 
+        //To access data within a func we use this keyword and to access the function outside the func we use objName.propertyName().
+
+
+    </script>
+</body>
+</html>

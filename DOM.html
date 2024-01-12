@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document.getElementById() -->
+    <h1 id="a">bangalore</h1>
+    <h1 id="a">goa</h1>
+    <p id="c">chennai</p>
+
+    <!-- document.getElementsByClassName() -->
+    <h2 class="p">dreaming</h2>
+    <p class="p">swimming</p>
+    <b class="q">dancing</b>
+    <i class="p">fishing</i>
+    <script>
+        let x=document.getElementById('a')
+        console.log(x);
+        console.log(x.innerHTML="andhra");
+        console.log(x.textContent);
+        console.log(x.innerText);
+        console.log(document.getElementById('c'));
+        console.log(document.getElementById('c').textContent);
+        console.log(document.getElementById('a').innerHTML);
+
+        let y=document.getElementsByClassName('p') 
+        console.log(y);
+        console.log(y[0]);  //indirect target
+        console.log(y[0].innerHTML);
+        console.log(y[1].textContent);
+        let z=document.getElementsByClassName('q');
+        console.log(z);
+        console.log(z[0].innerHTML);
+        console.log(z[0].innerText="bubieeee");
+        console.log(z[0].textContent);
+
+        console.log(document.getElementsByClassName('q').innerText); //undefined 
+        //we should always store in a variable in case of className.
+        
+        //for loop
+        for(let i=0;i<y.length;i++)
+        {
+            console.log(y[i]);
+            console.log(y[i].innerHTML);
+        }
+
+        //map() for collection
+        // let m= y.map((n)=>{
+        //     console.log(n);
+        // })
+        // console.log(m); //not possible 
+        //array contain both primitive and non-primitive data whereas collection contain only non-primitive data.
+
+        console.log(Array.isArray(z));
+        //converting collection into array
+        let c=Array.from(z)
+        console.log(c);
+        let d=Array.from(y)
+        console.log(d);
+
+        d.map((l)=>{
+            console.log(l);
+            console.log(l.innerHTML);
+        })
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>

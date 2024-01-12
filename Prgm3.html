@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--multiples of 2  -->
+    <script>
+        function multiple()
+        {
+            i=1;
+            while(i<=10)
+            {
+                console.log(i*2);
+                i++;
+            }
+            
+        }
+        multiple()
+    </script>
+
+<!-- print from 5 to 0 -->
+    <script>
+        a=5;
+        while(a>=0)
+        {
+            console.log(a);
+            a--;
+        }
+
+    </script>
+
+<!-- even no from 2 to 100 -->
+     <script>
+        function even(p,q)
+        {
+            for(i=p;i<=q;i++)
+            {
+                if(i%2==0)
+                console.log(i);
+            }       
+        }
+        even(2,100)
+     </script>
+
+<!-- print from -100 to -2 -->
+     <script>
+        var y= function(s,t)
+        {
+            for(i=s;i<=t;i++)
+            {   
+                if(i%2==0)
+                console.log(i);
+                
+            }
+
+        }
+        console.log(y(-100,-2));
+     </script>
+
+<!-- print 0 to 10 -->
+     <script>
+        var k=(a,b)=>
+        {
+            for(i=a;i<=b;i++)
+            console.log(i);
+
+        }
+        k(0,10)
+     </script>
+
+<!-- characters from A to E -->
+     <script>
+        (
+            function f2()
+            {
+                for(i='A';i<='E';i++)
+                {
+                    console.log(i);
+                }
+  
+            }
+        )()
+     </script>
+
+<!-- swap 2 numbers using temporary variable -->
+    <script>
+        var a=Number(prompt("enter first number"))
+        var b=Number(prompt("enter second number"))
+        console.log(`First number is ${a}`);
+        console.log(`Second number is ${b}`);
+        var temp=a;
+        a=b;
+        var b=temp;
+        console.log("After swapping");
+        console.log(a);
+        console.log(b);
+
+    </script>
+
+<!-- swap 2 no without using temporary variable -->
+     <script>
+        var m=Number(prompt("enter first number"))
+        var n=Number(prompt("enter second number"))
+        console.log(`First number is ${m}`);
+        console.log(`Second number is ${n}`);
+        var m=m+n;
+        var n=m-n;
+        var m=m-n;
+        console.log("After swapping");
+        console.log(m);
+        console.log(n);
+     </script>
+
+
+</body>
+</html>

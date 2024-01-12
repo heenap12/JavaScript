@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arrays
+        let a=[10,"hii",true,100]
+        console.log(a[0]);
+        console.log(a[3]);
+        console.log(a[9]);
+        console.log(a.length);
+        console.log(typeof(a));
+        
+        //concat()
+        let x=[10,20]
+        let y=[40,50]
+        let z=x.concat(y)
+        console.log(z);
+
+        let p=y.concat(100,'hi')
+        console.log(p);
+        console.log(x);
+        console.log(z.concat(x,y));
+        console.log(z);
+
+        //indexof()
+        let ary=[90,20,90,10.5,8,90]
+        console.log(ary.indexOf(20));
+        console.log(ary.indexOf(90));
+        console.log(ary.lastIndexOf(90));
+        console.log(ary.indexOf(900));
+        console.log(ary.lastIndexOf(10.5));
+        console.log(ary.indexOf(90,2));
+        console.log(ary.indexOf(90,0));
+        console.log(ary.indexOf(90,1));
+        console.log(ary.indexOf(90,5));
+        console.log(ary.indexOf(20,3));
+
+        //includes()
+        let b=[90,20,60,78]
+        console.log(b.includes(100));
+        console.log(b.includes(90));
+        console.log(b.includes(20,2));
+
+        //Array.isArray()
+        let q=[100,true,"hello",20]
+        console.log(Array.isArray(q));
+        console.log(Array.isArray(10));
+
+        //push()
+        let s=[30,70,20,90]
+        let t=s.push(900)
+        console.log(t);
+        console.log(s);
+        console.log(s.push(true,'hii'));
+        console.log(s);
+
+        //unshift()
+        let m=[80,20,60,70]
+        let n=m.unshift(700)
+        console.log(n);
+        console.log(m);
+        console.log(m.unshift(true,"hello"));
+        console.log(m);
+
+        //pop()
+        let p1=[10,true,'hyy',900]
+        let p2=p1.pop()
+        console.log(p2);
+        console.log(p1);
+        console.log(p1.pop());
+        console.log(p1);
+
+        //shift()
+        let s1=[50,80,'a',false]
+        let s2=s1.shift()
+        console.log(s2);
+        console.log(s1);
+        console.log(s1.shift());
+        console.log(s1);
+
+        //reverse()
+        let r1=[10,70,100,'b',true]
+        let r2=r1.reverse()
+        console.log(r2);
+        console.log(r1);
+
+        //slice()
+        let sl1=[40,20,"hello",'k',900,70,80]
+        let sl2=sl1.slice(2,4)
+        console.log(sl2);
+        console.log(sl1);
+        console.log(sl2.slice(0,3));
+        console.log(sl1.slice(2,-3));
+        console.log(sl1.slice(-1,-5));
+        console.log(sl1.slice(5,2));
+        console.log(sl1.slice(3));
+        console.log(sl1.slice(4,9));
+
+        //splice()
+        let sp1=[100,10,30,80,90,60,8.9]
+        let sp2=sp1.splice(3,3,70)
+        console.log(sp2);
+        console.log(sp1);
+        console.log(sp1.splice(4,1,'b'));
+        console.log(sp1);
+        console.log(sp1.splice(0,0,900));
+        console.log(sp1);
+
+        //toString()
+        let t1=[0,70,1,'hii']
+        let t2=t1.toString()
+        console.log(t2);
+        console.log(t1);
+        console.log(typeof(t1));
+        console.log(typeof(t2));
+
+        //join()
+        let j1=[true,"kid",20,900]
+        let j2=j1.join("")
+        console.log(j2);
+        console.log(j1.join(" "));
+        console.log(j1.join("_"));
+
+        //flat()
+        let f1=[10,[20,30],40,50,[[[60]]],70,80]
+        let f2=f1.flat(3)
+        console.log(f2);
+        console.log(f1);
+        console.log(f1.flat(1));
+
+    </script>
+</body>
+</html>

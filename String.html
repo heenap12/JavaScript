@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Reverse the string 'nagavara'
+        let str='nagavara'
+        let arr=str.split('')
+        console.log(arr);
+
+        let rev=arr.reverse()
+        console.log(rev);
+
+        let ans=rev.join('')
+        console.log(ans);
+
+        //Reverse first half of the string 'nagavara'
+        let str1='nagavara'
+        let arr1=str1.slice(0,str1.length/2);
+        console.log(arr1);
+
+        let arr2=arr1.split('')
+        console.log(arr2);
+
+        let rev1=arr2.reverse()
+        console.log(rev1);
+
+        let ans1=rev1.join('')
+        console.log(ans1);
+
+        //Reverse second half of the string 'nagavara'
+        let str2='nagavara'
+        let ary=str2.slice(str2.length/2)
+        console.log(ary);
+
+        let ary1=ary.split('')
+        console.log(ary1);
+
+        let rev2=ary1.reverse()
+        console.log(rev2);
+
+        let res=rev2.join('')
+        console.log(res);
+    </script>
+</body>
+</html>

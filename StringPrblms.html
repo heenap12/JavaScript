@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=[80,90,100,5]
+        let res=[]
+        let len=x.length
+        console.log(len);
+
+        for(let i=0; i<len; i++)
+        {
+            let remelem=x.shift()
+            console.log(remelem);
+            res.unshift(remelem)
+        }
+        console.log(res);
+
+        //WAP to empty the array
+        //[90,10,5,800]
+
+        let y=[90,10,5,800]
+        console.log(y);
+        // len=y.length
+        // console.log(len);
+        for(let j=0;j<y.length;j++)
+        {
+        let z=y.pop()
+        console.log(z);
+        console.log(y);
+        }
+
+        //WAP to create function of n no of arguments in those arguments find which is largest no
+        function f1(...x)
+        {
+            console.log(x);
+            let ans=x.reduce((a,b)=>{
+                if(a>b)
+                return a
+                else if(b>a)
+                return b
+            })
+            console.log(ans);
+
+        }
+        f1(9,10.5,8,10,30)
+
+        //Create a func of n no of arguments find the largest and smallest no where function behaves with return statement
+        let f2=function f(...p)
+        {
+            console.log(p);
+            let r=p.reduce((c,d)=>{
+                return (c>d ? c:d)
+                
+            })
+            let t=p.reduce((c,d)=>{
+                return (c<d ? c:d)
+            })
+            return `${r} is largest and ${t} is smallest`
+            
+        }
+        console.log(f2(30,70,20,90,2.5));
+        
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Click Me</button>
+    <h1></h1>
+    <script>
+        function f1()
+        {
+            let a="0123456789abcdef"
+            let b="#"
+            for(i=0;i<6;i++)
+            {
+                let y=Math.trunc(Math.random()*16)
+                let z=a.charAt(y)
+                b=b+z
+                document.querySelector('h1').innerHTML=b
+                document.querySelector('body').style.backgroundColor=b
+            }
+        }
+    </script>
+</body>
+</html>

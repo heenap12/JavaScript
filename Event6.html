@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <input type="range" min="2" max="200" oninput="f1()">
+
+    <script>
+        function f1()
+        {
+            let z=document.querySelector('input').value
+            document.querySelector('h1').style.fontSize=z+'px'
+        }
+    </script>
+</body>
+</html>

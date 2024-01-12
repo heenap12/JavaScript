@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document.getElementsByTagName() -->
+    <h1 id="a">summer</h1>
+    <h1 class="b">winter</h1>
+    <p>rainy</p>
+    <i>spring</i>
+
+    <script>
+        let x=document.getElementsByTagName('h1')
+        console.log(x);
+        console.log(document.getElementsByTagName('h1'));
+        console.log(x[0]);
+        console.log(x[1]);
+        console.log(x[0].innerHTML="autumn");
+        console.log(x[1].textContent);
+        let y=document.getElementsByTagName('p');
+        console.log(y);
+        console.log(y[0]);
+        console.log(y[0].innerHTML);
+        let z=document.getElementsByTagName('i')
+        console.log(z);
+        console.log(z[0]);
+        console.log(z[0].innerText);
+
+        //for loop-> directly printing tags
+        for(let i=0;i<x.length;i++)
+        {
+            console.log(x[i]);
+            console.log(x[i].innerHTML);
+        }
+        for(let j=0;j<y.length;j++)
+        {
+            console.log(y[j]);
+            console.log(y[j].innerHTML);
+        }
+        for(k=0;k<z.length;k++)
+        {
+            console.log(z[k]);
+            console.log(z[k].innerHTML);
+        }
+
+        //map()
+        console.log(Array.isArray(x)); //false
+        let a=Array.from(x)
+        console.log(a); //[h1,h1]->array
+
+        a.map((p)=>{
+            console.log(p); //<h1>summer</h1>, <h1>winter</h1>
+            console.log(p.innerHTML); //summer, winter
+        })
+
+        let b=Array.from(y)
+        console.log(b); //[p]
+
+        b.map((q)=>{
+            console.log(q); //<p>rainy</p>
+            console.log(q.innerText); //rainy
+        })
+
+        let c=Array.from(z)
+        console.log(c); //[i]
+
+        c.map((r)=>{
+            console.log(r); //<i>spring</i>
+            console.log(r.textContent); //spring
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //map()
+        let x=[100,200,300,400]
+        let ans=x.map(function f1(p,q,r)
+        {
+            console.log(p);
+            console.log(q);
+            console.log(r);
+            let a=p+50
+            console.log(a);
+            return a
+        })
+        console.log(ans);
+        console.log(x);
+
+        let y=['hello',50,80]
+        let p=y.map((a,b)=>
+        {
+            console.log(a);
+            console.log(b);
+            return a+b
+        })
+        console.log(p);
+
+        let arr=[10,20,30,40]
+        let q=arr.map((r)=>{
+            console.log(r+1);
+            return "hello"
+        })
+        console.log(q);
+
+        //forEach()
+        let ary=[10,20,100,200]
+        let res=ary.forEach((r)=>{
+            console.log(r+1);
+            return "hello"
+        })
+        console.log(res);
+        
+        
+        //filter()
+        let a1=[30,100,90,1,0]
+        let b1=a1.filter((a,b)=>{
+            console.log(a);
+            console.log(b);
+            return a>50
+        })
+        console.log(b1);
+
+        //reduce()
+        let x1=[20,10,6,2,50]
+        let y1=x1.reduce((p,q,r)=>{
+            console.log(p);
+            console.log(q);
+            console.log(r);
+            return p+q
+        })
+        console.log(y1);
+
+        //some()
+        let p1=[200,60,80,10,4]
+        let q1=p1.some((a)=>{
+            console.log(a);
+            return a>70
+        })
+        console.log(q1);
+
+        //every()
+        let s=[50,70,3,100,90]
+        let t=s.every((x)=>{
+            console.log(x);
+            return x>20
+        })
+        console.log(t);
+
+        //sort()
+        let m=["hii","byee","Sun","kitee"]
+        let n=m.sort()
+        console.log(n);
+
+        let ar1=[10,80,60,40]
+        let last=ar1.sort((j,k)=>{
+            return k-j
+        })
+        console.log(last);
+    </script>
+</body>
+</html>

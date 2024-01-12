@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    r
+    <input type="range" min="0" max="255" id="x" oninput="f1()">
+   g
+    <input type="range" min="0" max="255" id="y"oninput="f1()">
+   b
+    <input type="range" min="0" max="255" id="z"oninput="f1()">
+   <h1></h1>
+
+    <script>
+    function f1()
+    {
+        let d=document.getElementById('x').value
+        
+        let e=document.getElementById('y').value
+        
+        let f=document.getElementById('z').value
+       document.querySelector('h1').innerHTML=`rgb(${d},${e},${f})`
+       document.querySelector('body').style.backgroundColor=`rgb(${d},${e},${f})`
+    }
+
+    </script>
+</body>
+</html>

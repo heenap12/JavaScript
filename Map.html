@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40]
+        for(let i=0;i<arr.length;i++)
+        {
+            //console.log(arr[i]);
+            //console.log(i);
+            console.log(`arr[${i}]=${arr[i]}`);
+            console.log(arr[i]+5);
+        }
+
+        console.warn('Map Method');
+        let resArr=arr.map((elem,i) =>{
+            //console.log(elem);
+            //console.log(i);
+            //console.log(`arr[${i}]=${elem}`);
+            console.log(elem+5);
+            return elem+5
+
+        })
+        console.log(resArr);
+        
+        console.log('Program');
+        let ary=[31,20,40,57,7,18,99,26,45,22]
+        for(let j=0;j<ary.length;j++)
+        {
+            if(ary[j]%2==0)
+            console.log(ary[j]);//
+        }
+
+        console.log('Filter Method');
+        let even=ary.filter((elem,i)=>{
+            return elem%2 == 0
+
+        })
+        console.log(even);
+
+        let odd=ary.filter((elem,i)=>{
+            return elem%2 == 1
+
+        })
+        console.log(odd);
+
+        console.log(ary.filter(elem=> elem%2 == 1)); 
+        // this is possible in case of array func only when single return keyword is there. 
+        
+
+        
+
+        
+    </script>
+</body>
+</html>

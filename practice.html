@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=['10',200,"hi",50,200,70,200]
+        console.log(x.indexOf(200,0));
+        console.log(x.lastIndexOf(200));
+
+        let a=[10,60,100,200,50]
+        let b=a.filter((p,q)=>{
+            console.log(p);
+            console.log(q);
+            return p<30
+        })
+        console.log(b);
+
+        let p=[8,50,10,70,20]
+        let q=p.reduce((c,d)=>{
+            console.log(c);
+            console.log(d);
+            return c+d
+
+        })
+        console.log(q);
+    </script>
+</body>
+</html>

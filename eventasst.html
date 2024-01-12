@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    width <input type="range" min="10" max="300" id="a" oninput="f1()">
+    height <input type="range" min="20" max="300" id="b" oninput="f2()">
+    border radius <input type="range" min="2" max="150" id="c" oninput="f3()">
+    color <input type="color" min="0" max="255" id="d" oninput="f4()">
+    <div style="border: 1px solid black;height: 100px;width: 100px;"></div>
+
+    <script>
+        function f1()
+        {
+            let x=document.getElementById('a').value
+            document.querySelector('div').style.width=x+'px'
+        }
+        function f2()
+        {
+            let y=document.getElementById('b').value
+            document.querySelector('div').style.height=y+'px'
+        }
+        function f3()
+        {
+            let z=document.getElementById('c').value
+            document.querySelector('div').style.borderRadius=z+'px'
+        }
+        function f4()
+        {
+            let z1=document.getElementById('d').value
+            document.querySelector('div').style.backgroundColor=z1
+        }
+
+        
+    </script>
+</body>
+</html>

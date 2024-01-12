@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to display the ids
+        let x=[{
+            id:1,
+            loc:"jsp"
+        },
+        {
+            id:2,
+            loc:"qsp"
+        },
+        {
+            id:3,
+            loc:"pysp"
+        }
+    ]
+    x.map(function f1(elem){
+        console.log(elem.id);
+    })
+
+    //Find the average of salaries
+    let y=[{
+            id:1,
+            loc:"jsp",
+            sal:50000
+        },
+        {
+            id:2,
+            loc:"qsp",
+            sal:30000
+        },
+        {
+            id:3,
+            loc:"pysp",
+            sal:55000
+        }
+    ]
+    let a=y.map((p)=>{
+        return p.sal
+    })
+    console.log(a);
+
+    let avg=a.reduce((j,k)=>{
+        return j+k
+    })
+    console.log(avg);
+
+    let res=avg/x.length
+    console.log(res);
+
+    //WAP to add comp:"Testyantra" for each element in y
+    let ans=y.map((r)=>{
+        let s=Object.assign(r,{comp:"Testyantra"})
+        return s
+    })
+    console.log(ans);
+
+    
+    </script>
+</body>
+</html>

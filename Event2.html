@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button onclick="sum()">Sum</button><br>
+    <button onclick="sub()">Subtract</button>
+    <hr>
+    <h1 id="r"></h1>
+    <h1 id="q"></h1>
+
+    <script>
+        function sum()
+        {
+            // let x=document.querySelector('a')
+            // let m=Number(x.value)
+            // let y=document.querySelector('b')
+            // let n=Number(y.value)
+            // let ans=m+n
+            // document.querySelector('h1').innerHTML=ans
+
+            let x = document.getElementById('a').value
+            let y =document.getElementById('b').value
+            let z= Number(x)+Number(y)
+            document.getElementById('r').innerHTML=z
+        }
+        function sub()
+        {
+            let x = document.getElementById('a').value
+            let y =document.getElementById('b').value
+            let z1= Number(x)-Number(y)
+            document.getElementById('q').innerHTML=z1
+      
+        }
+    </script>
+</body>
+</html>

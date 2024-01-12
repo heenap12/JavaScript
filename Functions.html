@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Function
+        console.log("started");
+        function greet()
+        {
+            console.log("I am function body");
+        }
+        greet()
+        console.log("end");
+        greet()
+
+        //Named Function
+        function f1()
+        {
+            console.log("hello");
+            console.log(100+true);
+        }
+        f1()
+
+        //Return statement
+        function f()
+        {
+            var sum=100+100
+            console.log(sum);
+            return sum
+        }
+        let x=f()
+        console.log(x+100);
+
+        function mul()
+        {
+            console.log(10*10);
+            return 5+8
+        }
+        console.log("begin");
+        console.log(mul());
+
+        function select()
+        {
+            console.log(100+'10');
+            return "hello"
+        }
+        let p=select()
+        console.log(p);
+        console.log("second time");
+        console.log(select);
+        console.log(select());
+
+        function arith(x,y)
+        {
+            console.log(x+y);
+            console.log(x-y);
+            console.log(x*y);
+        }
+        console.log('behavior');
+        arith(10,20)
+
+        var a=30
+        var b=50
+        function f2(a,b)
+        {
+            console.log(a,b);
+            console.log(a+b);
+        }
+        f2(10,100)
+        console.log(a+b);
+
+        //Default Parameters
+        function sum(m,n)
+        {
+            let i=m+n
+            return i
+        }
+        console.log('last');
+        let ans=sum(200,30)
+        console.log(ans);
+        console.log(sum(80,6,10,90));
+
+        //Function Hoisting
+        console.log('hi');
+        f3(10,5)
+        function f3(c,d)
+        {
+            console.log(c,d);
+            console.log('hiiii');
+        }
+
+        //Anonymous Function
+        let j=function()
+        {
+            console.log(100+200);
+        }
+        j()
+        console.log('bye');
+
+        //Arrow Function
+        var k=()=>
+        {
+            console.log('happyy');
+        }
+        k()
+
+        //Self Invoking Function
+        (function d(p,q)
+        {
+            console.log("hello");
+            console.log(p,q);
+        })(10,30)
+        console.log("byeee");
+
+        //Higher order function
+        console.log("good morning");
+        function add(p,q)
+        {
+            console.log(p,q);
+            return p+q
+        }
+        function arithmetic(x,y)
+        {
+            console.log(x,y);
+            console.log(x+y);
+            return 'done'
+        }
+        let res=arithmetic(100,sum(20,60))
+        console.log(res);
+        
+    </script>
+</body>
+</html>

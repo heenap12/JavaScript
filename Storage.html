@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="email" placeholder="email" id="x">
+        <br><br>
+        <input type="text" placeholder="password" id="y">
+        <br><br><br>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        function f1()
+        {
+            let a=document.getElementById('x').value
+            let b=document.getElementById('y').value
+            console.log(a,b);
+            localStorage.setItem("mail",a)
+            localStorage.setItem("pass",b)
+        }
+        let y=localStorage.getItem("mail")
+        console.log(y);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a">ritz</h1>
+    <h1 class="b">carlton</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque labore voluptates saepe repellat deleniti molestias at et id voluptatem quae reiciendis dignissimos sapiente amet, velit facere nesciunt itaque exercitationem dolor?</p>
+    <b id="a">adidas</b>
+    
+</body>
+<script>
+    let x=document.querySelectorAll('#a')
+    console.log(x);
+    console.log(document.querySelectorAll('h1'));
+    console.log(document.querySelectorAll('p').innerHTML); //undefined
+    console.log(document.querySelectorAll('#a').innerHTML); //undefined
+
+    let y=Array.from(x)
+    console.log(y);
+
+    y.map((z)=>{
+        console.log(z);
+        console.log(z.innerHTML);
+    })
+</script>
+</html>

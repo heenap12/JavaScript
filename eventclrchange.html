@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    r <input type="range" min="0" max="255" id="a" oninput="f1()">
+    g <input type="range" min="0" max="255"id="b" oninput="f1()">
+    b <input type="range" min="0" max="255"id="c"oninput="f1()">
+    a <input type="range" min="0" max="1" step="0.1" id="d"oninput="f1()">
+    <h1></h1>
+
+    <script>
+        function f1()
+        {
+            let p=document.getElementById('a').value
+            let q=document.getElementById('b').value
+            let r=document.getElementById('c').value
+            let s=document.getElementById('d').value
+            document.querySelector('h1').innerHTML=`rbga(${p},${q},${r},${s})`  
+            document.querySelector('body').style.backgroundColor=`rgba(${p},${q},${r},${s})`      
+        }
+    </script>
+</body>
+</html>

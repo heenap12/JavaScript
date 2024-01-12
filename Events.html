@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick -->
+    <!-- 1st Approach -->
+    <!-- <button onclick="f1()">Click me</button>
+
+    <script>
+        function f1(){
+            window.alert("hello user...")
+        }
+
+    </script> -->
+    
+    <!-- 2nd Approach -->
+    <!-- <button>Click here</button>
+    <script>
+        let x=document.getElementsByTagName('button')
+        console.log(x);
+        x[0].onclick=function()
+        {
+            window.alert("welcome")
+        }
+    </script> -->
+    
+    <!-- 3rd Approach -->
+    <!-- addEventListener(event,function) -->
+    <button>Click me</button>
+    <script>
+        let y=document.querySelector('button')
+        y.addEventListener("click",function(){
+            window.alert("hello")
+        })
+    </script>
+</body>
+</html>
